@@ -1,0 +1,89 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background-color: #f9f9f9; /* Added background color */
+    font-family: 'Arial', sans-serif; /* Improved font readability */
+    transition: transform 0.3s ease-in-out; /* Add subtle animation */
+}
+
+.form-container:hover {
+    transform: scale(1.02); /* Slight zoom-in effect on hover */
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* Increased font size for better readability */
+    transition: border-color 0.3s ease-in-out; /* Smooth border color change */
+}
+
+.form-input:focus {
+    border-color: #007bff; /* Highlighted border on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add focus effect */
+}
+
+.form-button {
+    width: 95%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size for accessibility */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.form-button:active {
+    background-color: #003f7f;
+    transform: translateY(0); /* Reset when clicked */
+}
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 14px; /* Added small footer text for additional info */
+    color: #666;
+}
+
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    text-decoration: underline; /* Emphasize link on hover */
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .form-input {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .form-button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
